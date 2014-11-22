@@ -13,18 +13,14 @@
 - (id)initWithCoder:(NSCoder *)aDecoder {
     
     self = [super initWithCoder:aDecoder];
+    
     if (self) {
         
-        [self addPanGesture];
+        UITapGestureRecognizer * tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self
+                                                                                                action:@selector(handleTapGesture:)];
+        [self addGestureRecognizer:tapGestureRecognizer];
     }
     return self;
-}
-
-- (void)addPanGesture {
-    
-    UITapGestureRecognizer * tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self
-                                                                                            action:@selector(handleTapGesture:)];
-    [self addGestureRecognizer:tapGestureRecognizer];
 }
 
 - (void)handleTapGesture:(UITapGestureRecognizer*)tapGestureRecognizer {
@@ -53,11 +49,9 @@
     
     CGSize sizeOfView = [self bounds].size;
     
-    CGFloat width = sizeOfView.width;
-    CGFloat height = sizeOfView.height;
+    CGFloat width = sizeOfView.width, height = sizeOfView.height;
     
-    CGFloat x = touchLocation.x;
-    CGFloat y = touchLocation.y;
+    CGFloat x = touchLocation.x, y = touchLocation.y;
     
     CGFloat R1 = hypotf(x, y);
     CGFloat R2 = hypotf(x - width, y);
@@ -82,6 +76,7 @@
     animation.duration = 0.6;
     animation.removedOnCompletion = YES;
     animation.fillMode = kCAFillModeForwards;
+    
     [circularLayer addAnimation:animation forKey:@"expanding"];
 }
 
