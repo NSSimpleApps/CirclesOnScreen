@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B51990CD1A20AF870044A338 /* CirclesOnScreen.gif in Resources */ = {isa = PBXBuildFile; fileRef = B51990CC1A20AF870044A338 /* CirclesOnScreen.gif */; };
 		B5DF4CC91A18EF050098EC76 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B5DF4CC81A18EF050098EC76 /* main.m */; };
 		B5DF4CCC1A18EF050098EC76 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B5DF4CCB1A18EF050098EC76 /* AppDelegate.m */; };
 		B5DF4CCF1A18EF050098EC76 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B5DF4CCE1A18EF050098EC76 /* ViewController.m */; };
@@ -28,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B51990CC1A20AF870044A338 /* CirclesOnScreen.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = CirclesOnScreen.gif; sourceTree = "<group>"; };
 		B5DF4CC31A18EF050098EC76 /* CirclesOnScreen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CirclesOnScreen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5DF4CC71A18EF050098EC76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B5DF4CC81A18EF050098EC76 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -84,6 +86,7 @@
 		B5DF4CC51A18EF050098EC76 /* CirclesOnScreen */ = {
 			isa = PBXGroup;
 			children = (
+				B51990CC1A20AF870044A338 /* CirclesOnScreen.gif */,
 				B5DF4CEC1A18EF180098EC76 /* CustomView.h */,
 				B5DF4CED1A18EF180098EC76 /* CustomView.m */,
 				B5DF4CCA1A18EF050098EC76 /* AppDelegate.h */,
@@ -205,6 +208,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5DF4CD21A18EF050098EC76 /* Main.storyboard in Resources */,
+				B51990CD1A20AF870044A338 /* CirclesOnScreen.gif in Resources */,
 				B5DF4CD71A18EF050098EC76 /* LaunchScreen.xib in Resources */,
 				B5DF4CD41A18EF050098EC76 /* Images.xcassets in Resources */,
 			);
@@ -418,6 +422,7 @@
 				B5DF4CE81A18EF050098EC76 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B5DF4CE91A18EF050098EC76 /* Build configuration list for PBXNativeTarget "CirclesOnScreenTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +431,7 @@
 				B5DF4CEB1A18EF050098EC76 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
