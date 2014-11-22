@@ -3,4 +3,4 @@ CirclesOnScreen
 
 Expanding circles on screen.
 
-![Alt text](/../CirclesOnScreen/path/to/CirclesOnScreen.gif?raw=true "Optional Title")
+![Alt text](https://github.com/NSSimpleApps/CirclesOnScreen/blob/master/CirclesOnScreen/CirclesOnScreen.gif?raw=true "Optional Title")
