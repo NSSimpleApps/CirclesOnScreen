@@ -15,7 +15,6 @@
 		B5DF4CD41A18EF050098EC76 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5DF4CD31A18EF050098EC76 /* Images.xcassets */; };
 		B5DF4CD71A18EF050098EC76 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5DF4CD51A18EF050098EC76 /* LaunchScreen.xib */; };
 		B5DF4CE31A18EF050098EC76 /* CirclesOnScreenTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B5DF4CE21A18EF050098EC76 /* CirclesOnScreenTests.m */; };
-		B5DF4CEE1A18EF180098EC76 /* CustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = B5DF4CED1A18EF180098EC76 /* CustomView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,8 +42,6 @@
 		B5DF4CDC1A18EF050098EC76 /* CirclesOnScreenTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CirclesOnScreenTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5DF4CE11A18EF050098EC76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B5DF4CE21A18EF050098EC76 /* CirclesOnScreenTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CirclesOnScreenTests.m; sourceTree = "<group>"; };
-		B5DF4CEC1A18EF180098EC76 /* CustomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomView.h; sourceTree = "<group>"; };
-		B5DF4CED1A18EF180098EC76 /* CustomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,8 +84,6 @@
 			isa = PBXGroup;
 			children = (
 				B51990CC1A20AF870044A338 /* CirclesOnScreen.gif */,
-				B5DF4CEC1A18EF180098EC76 /* CustomView.h */,
-				B5DF4CED1A18EF180098EC76 /* CustomView.m */,
 				B5DF4CCA1A18EF050098EC76 /* AppDelegate.h */,
 				B5DF4CCB1A18EF050098EC76 /* AppDelegate.m */,
 				B5DF4CCD1A18EF050098EC76 /* ViewController.h */,
@@ -229,7 +224,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5DF4CCF1A18EF050098EC76 /* ViewController.m in Sources */,
-				B5DF4CEE1A18EF180098EC76 /* CustomView.m in Sources */,
 				B5DF4CCC1A18EF050098EC76 /* AppDelegate.m in Sources */,
 				B5DF4CC91A18EF050098EC76 /* main.m in Sources */,
 			);
