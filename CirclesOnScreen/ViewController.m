@@ -31,15 +31,24 @@
     CAShapeLayer* circularLayer = [CAShapeLayer layer];
     circularLayer.strokeColor = [[UIColor blackColor] CGColor];
     circularLayer.lineWidth = 3.0;
-    circularLayer.path = [self getCircularPathWithCenter:centerOfCircle radius:0];
+    circularLayer.path = [self circularPathWithCenter:centerOfCircle radius:0];
     circularLayer.fillColor = [[UIColor clearColor] CGColor];
     
     [self.view.layer addSublayer:circularLayer];
     
-    [self expandCircularLayer:circularLayer center:centerOfCircle radius:[self maximumRadius:centerOfCircle]];
+    CAKeyframeAnimation *animation = [CAKeyframeAnimation animationWithKeyPath:@"path"];
+    animation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseIn];
+    animation.values = @[(id)[self circularPathWithCenter:centerOfCircle radius:0],
+                         (id)[self circularPathWithCenter:centerOfCircle radius:[self maximumRadius:centerOfCircle]]];;
+    animation.duration = 0.6;
+    animation.removedOnCompletion = YES;
+    animation.fillMode = kCAFillModeForwards;
+    animation.delegate = self;
+    
+    [circularLayer addAnimation:animation forKey:@"expanding"];
 }
 
-- (CGPathRef)getCircularPathWithCenter:(CGPoint)center radius:(CGFloat)radius {
+- (CGPathRef)circularPathWithCenter:(CGPoint)center radius:(CGFloat)radius {
     
     UIBezierPath *circularPath = [UIBezierPath bezierPathWithOvalInRect:CGRectMake(center.x - radius, center.y - radius,
                                                                                    2*radius, 2*radius)];
@@ -62,20 +71,10 @@
     return MAX(MAX(R1, R2), MAX(R3, R4));
 }
 
-- (void)expandCircularLayer:(CAShapeLayer*)circularLayer center:(CGPoint)center radius:(CGFloat)radius {
+- (void)animationDidStop:(CAAnimation *)anim finished:(BOOL)flag {
     
-    CAKeyframeAnimation *animation = [CAKeyframeAnimation animationWithKeyPath:@"path"];
-    animation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseIn];
-    
-    NSArray *values = @[(id)[self getCircularPathWithCenter:center radius:0],
-                        (id)[self getCircularPathWithCenter:center radius:radius]];
-    
-    animation.values = values;
-    animation.duration = 0.6;
-    animation.removedOnCompletion = YES;
-    animation.fillMode = kCAFillModeForwards;
-    
-    [circularLayer addAnimation:animation forKey:@"expanding"];
+    CALayer *layer = [self.view.layer.sublayers lastObject];
+    [layer removeFromSuperlayer];
 }
 
 @end
