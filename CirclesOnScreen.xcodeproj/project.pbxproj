@@ -14,18 +14,7 @@
 		B5DF4CD21A18EF050098EC76 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5DF4CD01A18EF050098EC76 /* Main.storyboard */; };
 		B5DF4CD41A18EF050098EC76 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5DF4CD31A18EF050098EC76 /* Images.xcassets */; };
 		B5DF4CD71A18EF050098EC76 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5DF4CD51A18EF050098EC76 /* LaunchScreen.xib */; };
-		B5DF4CE31A18EF050098EC76 /* CirclesOnScreenTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B5DF4CE21A18EF050098EC76 /* CirclesOnScreenTests.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		B5DF4CDD1A18EF050098EC76 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B5DF4CBB1A18EF050098EC76 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B5DF4CC21A18EF050098EC76;
-			remoteInfo = CirclesOnScreen;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		B51990CC1A20AF870044A338 /* CirclesOnScreen.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = CirclesOnScreen.gif; sourceTree = "<group>"; };
@@ -39,20 +28,10 @@
 		B5DF4CD11A18EF050098EC76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B5DF4CD31A18EF050098EC76 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B5DF4CD61A18EF050098EC76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		B5DF4CDC1A18EF050098EC76 /* CirclesOnScreenTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CirclesOnScreenTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B5DF4CE11A18EF050098EC76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B5DF4CE21A18EF050098EC76 /* CirclesOnScreenTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CirclesOnScreenTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		B5DF4CC01A18EF050098EC76 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B5DF4CD91A18EF050098EC76 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -66,7 +45,6 @@
 			isa = PBXGroup;
 			children = (
 				B5DF4CC51A18EF050098EC76 /* CirclesOnScreen */,
-				B5DF4CDF1A18EF050098EC76 /* CirclesOnScreenTests */,
 				B5DF4CC41A18EF050098EC76 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -75,7 +53,6 @@
 			isa = PBXGroup;
 			children = (
 				B5DF4CC31A18EF050098EC76 /* CirclesOnScreen.app */,
-				B5DF4CDC1A18EF050098EC76 /* CirclesOnScreenTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -105,23 +82,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		B5DF4CDF1A18EF050098EC76 /* CirclesOnScreenTests */ = {
-			isa = PBXGroup;
-			children = (
-				B5DF4CE21A18EF050098EC76 /* CirclesOnScreenTests.m */,
-				B5DF4CE01A18EF050098EC76 /* Supporting Files */,
-			);
-			path = CirclesOnScreenTests;
-			sourceTree = "<group>";
-		};
-		B5DF4CE01A18EF050098EC76 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				B5DF4CE11A18EF050098EC76 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -142,39 +102,17 @@
 			productReference = B5DF4CC31A18EF050098EC76 /* CirclesOnScreen.app */;
 			productType = "com.apple.product-type.application";
 		};
-		B5DF4CDB1A18EF050098EC76 /* CirclesOnScreenTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B5DF4CE91A18EF050098EC76 /* Build configuration list for PBXNativeTarget "CirclesOnScreenTests" */;
-			buildPhases = (
-				B5DF4CD81A18EF050098EC76 /* Sources */,
-				B5DF4CD91A18EF050098EC76 /* Frameworks */,
-				B5DF4CDA1A18EF050098EC76 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				B5DF4CDE1A18EF050098EC76 /* PBXTargetDependency */,
-			);
-			name = CirclesOnScreenTests;
-			productName = CirclesOnScreenTests;
-			productReference = B5DF4CDC1A18EF050098EC76 /* CirclesOnScreenTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		B5DF4CBB1A18EF050098EC76 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0610;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = NSSimpleApps;
 				TargetAttributes = {
 					B5DF4CC21A18EF050098EC76 = {
 						CreatedOnToolsVersion = 6.1;
-					};
-					B5DF4CDB1A18EF050098EC76 = {
-						CreatedOnToolsVersion = 6.1;
-						TestTargetID = B5DF4CC21A18EF050098EC76;
 					};
 				};
 			};
@@ -192,7 +130,6 @@
 			projectRoot = "";
 			targets = (
 				B5DF4CC21A18EF050098EC76 /* CirclesOnScreen */,
-				B5DF4CDB1A18EF050098EC76 /* CirclesOnScreenTests */,
 			);
 		};
 /* End PBXProject section */
@@ -209,13 +146,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B5DF4CDA1A18EF050098EC76 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -229,23 +159,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B5DF4CD81A18EF050098EC76 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B5DF4CE31A18EF050098EC76 /* CirclesOnScreenTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		B5DF4CDE1A18EF050098EC76 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = B5DF4CC21A18EF050098EC76 /* CirclesOnScreen */;
-			targetProxy = B5DF4CDD1A18EF050098EC76 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		B5DF4CD01A18EF050098EC76 /* Main.storyboard */ = {
@@ -287,6 +201,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -301,7 +216,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -336,7 +251,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -349,6 +264,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CirclesOnScreen/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "NSSimpleApps.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -360,42 +276,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CirclesOnScreen/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "NSSimpleApps.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		B5DF4CEA1A18EF050098EC76 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = CirclesOnScreenTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CirclesOnScreen.app/CirclesOnScreen";
-			};
-			name = Debug;
-		};
-		B5DF4CEB1A18EF050098EC76 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = CirclesOnScreenTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CirclesOnScreen.app/CirclesOnScreen";
 			};
 			name = Release;
 		};
@@ -416,15 +299,6 @@
 			buildConfigurations = (
 				B5DF4CE71A18EF050098EC76 /* Debug */,
 				B5DF4CE81A18EF050098EC76 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B5DF4CE91A18EF050098EC76 /* Build configuration list for PBXNativeTarget "CirclesOnScreenTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B5DF4CEA1A18EF050098EC76 /* Debug */,
-				B5DF4CEB1A18EF050098EC76 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
