@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 
-@interface ViewController ()
+@interface ViewController () <CAAnimationDelegate>
 
 @end
 
@@ -17,11 +17,6 @@
 - (void)viewDidLoad {
     
     [super viewDidLoad];
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 - (IBAction)handleTapGesture:(UITapGestureRecognizer *)sender {
